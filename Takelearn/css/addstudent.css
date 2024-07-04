@@ -1,0 +1,94 @@
+﻿
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.fieldset input {
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    width:100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.fieldset button:hover {
+    opacity: 0.8;
+}
+
+.fieldset .lgnbtn {
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    border: 1px solid #ddd;
+    color: white;
+    cursor: pointer;
+    float: left;
+    width: 100%;
+}
+
+
+.fieldset .sgnbtn {
+    background-color: firebrick;
+    border: 1px solid #ddd;
+    color: white;
+    cursor: pointer;
+    float: right;
+    width: 100%;
+}
+
+.fieldset .loginnowbtn {
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+
+.lgnfieldset {
+    align-items: stretch;
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+
+
+.fieldset {
+    align-items: stretch;
+    display: block;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    margin: 5px 10px 5px 0;
+    font-size: 15px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 900px) {
+
+    .fieldset {
+        flex-direction: column;
+        align-items: stretch;
+        display: flex;
+        width: 100%;
+    }
+
+        .fieldset .lgnbtn {
+            width: 100%;
+        }
+
+
+        .fieldset .loginnowbtn {
+            width: 100%;
+        }
+
+    .lgnfieldset {
+        align-items: stretch;
+        display: flex;
+        width: 100%;
+    }
+}
